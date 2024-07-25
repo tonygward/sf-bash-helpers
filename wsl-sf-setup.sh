@@ -3,9 +3,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install wget ca-certificates
 
-# install yarn
-npm install --global yarn
-
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -13,6 +10,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # install node
 nvm install --lts
+
+# install yarn
+npm install --global yarn
 
 # install sf cli
 npm install -g @salesforce/cli
