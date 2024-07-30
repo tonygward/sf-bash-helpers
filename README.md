@@ -7,3 +7,6 @@ get csv list of all .cls files with @isTest
 
 2. wsl-sf-setup
 create a new Ubuntu WSL Salesforce development environment
+
+3. retrieve-org
+retrieve all metadata in a Salesforce org
