@@ -33,9 +33,9 @@ sudo apt install openjdk-21-jdk -y
 
 # PMD
 cd $HOME
-wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.3.0/pmd-dist-7.3.0-bin.zip
+wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.4.0/pmd-dist-7.4.0-bin.zip
 sudo apt install unzip
-unzip pmd-dist-7.3.0-bin.zip
-rm pmd-dist-7.3.0-bin.zip
-alias pmd="$HOME/pmd-bin-7.3.0/bin/pmd"
+unzip pmd-dist-7.4.0-bin.zip
+rm pmd-dist-7.4.0-bin.zip
+alias pmd="$HOME/pmd-bin-7.4.0/bin/pmd"
 pmd check -d /usr/src -R rulesets/java/quickstart.xml -f text
