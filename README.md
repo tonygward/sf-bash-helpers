@@ -10,3 +10,5 @@ create a new Ubuntu WSL Salesforce development environment
 
 3. retrieve-org
 retrieve all metadata in a Salesforce org
+
+4. install and run LWC Jest
