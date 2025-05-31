@@ -32,10 +32,10 @@ sudo apt install openjdk-21-jdk -y
 # Salesforce Extension Folder: /usr/lib/jvm/java-21-openjdk-amd64/
 
 # PMD
-cd $HOME
-wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.4.0/pmd-dist-7.4.0-bin.zip
 sudo apt install unzip
-unzip pmd-dist-7.4.0-bin.zip
-rm pmd-dist-7.4.0-bin.zip
-alias pmd="$HOME/pmd-bin-7.4.0/bin/pmd"
+cd $HOME
+wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.14.0/pmd-dist-7.14.0-bin.zip
+unzip pmd-dist-7.14.0-bin.zip
+rm pmd-dist-7.14.0-bin.zip
+alias pmd="$HOME/pmd-bin-7.14.0/bin/pmd"
 pmd check -d /usr/src -R rulesets/java/quickstart.xml -f text
